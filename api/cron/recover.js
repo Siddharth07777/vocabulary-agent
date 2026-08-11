@@ -16,8 +16,7 @@ export default async function handler(req, res) {
   const expected = `Bearer ${process.env.CRON_SECRET}`;
 
   if (req.headers.authorization !== expected) {
-    return res.status(401).json({ error: "unauthorized" });
-  }
+    return res.status(401).json({ error: "unauthorized"   }
 
   try {
     const cutoff = new Date(Date.now() - 5 * 60 * 1000).toISOString();
@@ -55,9 +54,7 @@ export default async function handler(req, res) {
 
         if (job.word) {
           await supabase.from("words").update({
-            status: "pending",
-            last_error: "Recovered after stale job timeout"
-          }).eq("word", job.word);
+            status: "pending",          }).eq("word", job.word);
         }
         recovered.push(job.word);
       }
