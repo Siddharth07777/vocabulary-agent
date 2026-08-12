@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Vocabulary Agent</title>
+<style>body{font-family:system-ui;max-width:700px;margin:40px auto;padding:20px} .word{border:1px solid #333;padding:15px;margin:10px 0;border-radius:8px}</style>
+</head>
+<body>
+<h1>Vocabulary Agent is Live ✅</h1>
+<p>API is running at <a href="/api/generate">/api/generate</a></p>
+<div id="words"></div>
+<script>
+fetch('/api/generate').then(r=>r.json()).then(d=>{
+ document.getElementById('words').innerHTML = '<pre>'+JSON.stringify(d,null,2)+'</pre>'
+}).catch(()=>{document.getElementById('words').innerText='Backend ready. Check /api/generate endpoint'})
+</script>
+</body>
+</html>
