@@ -1,0 +1,39 @@
+{
+  "word": "ephemeral",
+  "meaning": "to become less intense or widespread",
+  "definition": "to become less intense or widespread",
+  "synonyms": [
+    "subside",
+    "lessen",
+    "diminish"
+  ],
+  "antonyms": [
+    "intensify",
+    "increase"
+  ],
+  "examples": [
+    "The storm finally began to ephemeral.",
+    "The pain will ephemeral after rest."
+  ],
+  "mcq": {
+    "question": "What does 'ephemeral' mean?",
+    "options": [
+      "to become less intense",
+      "to increase",
+      "to create",
+      "to destroy"
+    ],
+    "answer": "to become less intense"
+  },
+  "pyqs": [
+    {
+      "source_type": "PYQ_STYLE",
+      "exam_year": null,
+      "exam_name": null,
+      "question": "PYQ style: Choose synonym for ephemeral"
+    }
+  ],
+  "pyqStatus": "not_found",
+  "pyq_status": "not_found",
+  "content_hash": "cccebb47b04a7523ec27fdd08eb6591a916bcb8ad34b3c79b9fed97c0fc58d62"
+}

@@ -1,0 +1,39 @@
+{
+  "word": "abate",
+  "meaning": "to become less intense or widespread",
+  "definition": "to become less intense or widespread",
+  "synonyms": [
+    "subside",
+    "lessen",
+    "diminish"
+  ],
+  "antonyms": [
+    "intensify",
+    "increase"
+  ],
+  "examples": [
+    "The storm finally began to abate.",
+    "The pain will abate after rest."
+  ],
+  "mcq": {
+    "question": "What does 'abate' mean?",
+    "options": [
+      "to become less intense",
+      "to increase",
+      "to create",
+      "to destroy"
+    ],
+    "answer": "to become less intense"
+  },
+  "pyqs": [
+    {
+      "source_type": "PYQ_STYLE",
+      "exam_year": null,
+      "exam_name": null,
+      "question": "PYQ style: Choose synonym for abate"
+    }
+  ],
+  "pyqStatus": "not_found",
+  "pyq_status": "not_found",
+  "content_hash": "baa55b6e1b64f12d45b9c96897917fb3d9e88b7d9f8b38fc1b46e164871760f6"
+}

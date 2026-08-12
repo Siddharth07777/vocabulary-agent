@@ -1,0 +1,39 @@
+{
+  "word": "benevolent",
+  "meaning": "to become less intense or widespread",
+  "definition": "to become less intense or widespread",
+  "synonyms": [
+    "subside",
+    "lessen",
+    "diminish"
+  ],
+  "antonyms": [
+    "intensify",
+    "increase"
+  ],
+  "examples": [
+    "The storm finally began to benevolent.",
+    "The pain will benevolent after rest."
+  ],
+  "mcq": {
+    "question": "What does 'benevolent' mean?",
+    "options": [
+      "to become less intense",
+      "to increase",
+      "to create",
+      "to destroy"
+    ],
+    "answer": "to become less intense"
+  },
+  "pyqs": [
+    {
+      "source_type": "PYQ_STYLE",
+      "exam_year": null,
+      "exam_name": null,
+      "question": "PYQ style: Choose synonym for benevolent"
+    }
+  ],
+  "pyqStatus": "not_found",
+  "pyq_status": "not_found",
+  "content_hash": "30aca4436ffa5d27f7c1216491f04d5cea68c2a3809612deb0d0519124a14b4a"
+}

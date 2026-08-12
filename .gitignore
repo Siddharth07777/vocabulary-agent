@@ -1,8 +1,3 @@
-node_modules
-package-lock.json
-generated
-__pycache__
-*.pyc
-.env
-.env.local
 .next
+node_modules
+.env.local
