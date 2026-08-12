@@ -1,16 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head><title>Vocabulary Agent</title>
-<style>body{font-family:system-ui;max-width:700px;margin:40px auto;padding:20px} .word{border:1px solid #333;padding:15px;margin:10px 0;border-radius:8px}</style>
-</head>
-<body>
-<h1>Vocabulary Agent is Live ✅</h1>
-<p>API is running at <a href="/api/generate">/api/generate</a></p>
-<div id="words"></div>
-<script>
-fetch('/api/generate').then(r=>r.json()).then(d=>{
- document.getElementById('words').innerHTML = '<pre>'+JSON.stringify(d,null,2)+'</pre>'
-}).catch(()=>{document.getElementById('words').innerText='Backend ready. Check /api/generate endpoint'})
-</script>
-</body>
-</html>
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vocabulary Agent</title><style>body{font-family:system-ui;max-width:800px;margin:0 auto;padding:20px;background:#fafafa}.card{background:white;border-radius:12px;padding:18px;margin:14px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}.badge{display:inline-block;background:#000;color:#fff;padding:2px 8px;border-radius:99px;font-size:12px;margin-right:6px}.mean{font-size:18px;margin:8px 0}</style></head><body><h1>Vocabulary Agent ✅ Live</h1><p id="status">Loading words...</p><div id="list"></div><script>async function load(){try{const r=await fetch('/api/words');const j=await r.json();if(!j.words){document.getElementById('status').innerText='API Error: '+JSON.stringify(j);return;}document.getElementById('status').innerText=j.words.length+' words published';document.getElementById('list').innerHTML=j.words.map(w=>{const c=w.word_content?.[0]||{};return `<div class=card><h2>${w.word}</h2><div class=mean>${c.simple_meaning||''}</div><div>${(c.part_of_speech||'')} ${(c.synonyms||[]).slice(0,5).map(s=>`<span class=badge>${s}</span>`).join('')}</div><div style="margin-top:8px;color:#555">${(c.examples||[])[0]||''}</div></div>`}).join('');}catch(e){document.getElementById('status').innerText='Failed: '+e;}}load();</script></body></html>rm api/words.js
