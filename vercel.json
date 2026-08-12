@@ -1,10 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/generate.js": { "maxDuration": 60 },
-    "api/cron/recover.js": { "maxDuration": 30 },
-    "api/words.js": { "maxDuration": 10 }
-  },
   "crons": [
     { "path": "/api/cron/recover", "schedule": "0 0 * * *" }
   ],
