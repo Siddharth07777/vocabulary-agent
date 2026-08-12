@@ -1,9 +1,5 @@
 {
   "crons": [
     { "path": "/api/cron/recover", "schedule": "0 0 * * *" }
-  ],
-  "rewrites": [
-    { "source": "/", "destination": "/web/index.html" },
-    { "source": "/app.js", "destination": "/web/app.js" }
   ]
 }
